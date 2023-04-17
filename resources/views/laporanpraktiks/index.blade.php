@@ -260,6 +260,13 @@
         legend:{
             display: false
         },
+        scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true
+            }
+        }]
+    }
       }
 
       new Chart(barChartCanvas, {
