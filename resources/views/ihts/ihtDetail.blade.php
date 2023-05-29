@@ -51,18 +51,12 @@
                     </div>
                     <div class="mb-3">
                         <label for="tempat" class="form-label">Tempat</label>
-                            <select type="text" class="form-control @error('tempat') is-invalid @enderror" name="tempat">
-                                <option disabled selected value>---Tempat---</option>
-                                <option value='Ruang Kelas A' {{old('tempat') == 'Ruang Kelas A' ? "selected" : ""}}>Ruang kelas A</option>
-                                <option value='Ruang Kelas B' {{old('tempat') == 'Ruang Kelas B' ? "selected" : ""}}>Ruang kelas B</option>
-                                <option value='GSG' {{old('tempat') == 'GSG' ? "selected" : ""}}>GSG</option>
-                                <option value='Lainnya' {{old('tempat') == 'Lainnya' ? "selected" : ""}}>Lainnya</option>
-                            </select>
-                            @error('tempat') <span class="text-danger">{{$message}}</span> @enderror
-                    </div>
-                    <div id="otherType" style="display:none;" class="mb-3">
-                        <label for="tempatInput">Jika memilih 'Lainnya', silahkan isi tempat kegiatan di bawah ini:</label>
-                        <input type="text" id="tempatInput" class="form-control @error('tempat') is-invalid @enderror" aria-describedby="namaHelp" placeholder="Tempat kegiatan" name="tempat" value="{{ old('tempat') }}" disabled>
+                        <input type="text" class="form-control @error('tempat') is-invalid @enderror" name="tempat" aria-placeholder="tempat" placeholder="Ruang Kelas A" value="{{ old('tempat') }}">
+                            @error('tempat')
+                                <div class="invalid-feedback">
+                                    {{$message}};
+                                </div>
+                            @enderror
                     </div>
                     <div class="mb-3">
                         <label for="pesertaInput" class="form-label">Jumlah Peserta</label>
@@ -140,18 +134,12 @@
                     </div>
                     <div class="mb-3">
                         <label for="tempat" class="form-label">Tempat</label>
-                            <select type="text" class="form-control @error('tempat') is-invalid @enderror" id="tempat" name="tempat">
-                                <option disabled selected value>---Tempat---</option>
-                                <option value='Ruang Kelas A' {{old('tempat') == 'Ruang Kelas A' ? "selected" : ""}}>Ruang kelas A</option>
-                                <option value='Ruang Kelas B' {{old('tempat') == 'Ruang Kelas B' ? "selected" : ""}}>Ruang kelas B</option>
-                                <option value='GSG' {{old('tempat') == 'GSG' ? "selected" : ""}}>GSG</option>
-                                <option value='Lainnya' {{old('tempat') == 'Lainnya' ? "selected" : ""}}>Lainnya</option>
-                            </select>
-                            @error('tempat') <span class="text-danger">{{$message}}</span> @enderror
-                    </div>
-                    <div id="otherTypeEdit" style="display:none;" class="mb-3">
-                        <label for="tempatInput">Jika memilih 'Lainnya', silahkan isi tempat kegiatan di bawah ini:</label>
-                        <input type="text" id="tempatInputEdit" class="form-control @error('tempat') is-invalid @enderror" aria-describedby="namaHelp" placeholder="Tempat kegiatan" name="tempat" value="{{ old('tempat') }}" disabled>
+                        <input type="text" class="form-control @error('tempat') is-invalid @enderror" id="tempat" name="tempat" aria-placeholder="tempat" placeholder="Ruang Kelas A" value="{{ old('tempat') }}">
+                            @error('tempat')
+                            <div class="invalid-feedback">
+                                {{$message}};
+                            </div>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="pesertaInput" class="form-label">Jumlah Peserta</label>
@@ -203,7 +191,7 @@
                 ?>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#ihtDetailModal" id="detailIhtBtn">
-                    <i class="fa fa-plus"></i> Tambah Detail Kegiatan
+                    <i class="fa fa-plus"></i> Tambah
                 </button>
                 <a href="/cetakDetail/{{$iht['id']}}" class="btn btn-danger my-2">
                     <i class="far fa-fw fa-file"></i> PDF
@@ -230,7 +218,7 @@
                             <th>Dibuat</th>
                             <th>Diperbaharui</th>
                             @endif
-                            <th >Aksi</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -341,28 +329,28 @@
             $('#ihtDetailModalEdit').modal('show');
         });
 
-        // script for show input text field Tempat
-        $('select[name=tempat]').change(function(){
-            if($(this).val() == 'Lainnya') {
-                $('#otherType').show();
-                $('#tempatInput').prop('disabled',false);
-            }
-            else {
-                $('#otherType').hide();
-                $('#tempatInput').prop('disabled',true);
-            }
-        });
+        // script for show input text field Tempat (Depricated)
+        // $('select[name=tempat]').change(function(){
+        //     if($(this).val() == 'Lainnya') {
+        //         $('#otherType').show();
+        //         $('#tempatInput').prop('disabled',false);
+        //     }
+        //     else {
+        //         $('#otherType').hide();
+        //         $('#tempatInput').prop('disabled',true);
+        //     }
+        // });
 
-        $('select[name=tempat]').change(function(){
-            if(($(this).val() != 'Ruang Kelas A') && ($(this).val() != 'Ruang Kelas B') && ($(this).val() != 'GSG')) {
-                $('#otherTypeEdit').show();
-                $('#tempatInputEdit').prop('disabled',false);
-            }
-            else {
-                $('#otherTypeEdit').hide();
-                $('#tempatInputEdit').prop('disabled',true);
-            }
-        });
+        // $('select[name=tempat]').change(function(){
+        //     if(($(this).val() != 'Ruang Kelas A') && ($(this).val() != 'Ruang Kelas B') && ($(this).val() != 'GSG')) {
+        //         $('#otherTypeEdit').show();
+        //         $('#tempatInputEdit').prop('disabled',false);
+        //     }
+        //     else {
+        //         $('#otherTypeEdit').hide();
+        //         $('#tempatInputEdit').prop('disabled',true);
+        //     }
+        // });
 
     </script>
 @endpush

@@ -151,7 +151,7 @@ class PegawaiController extends Controller
 
         view()->share('pegawai', $pegawai);
         $pdf = PDF::loadView('pegawais.pegawai-pdf');
-        $pdf->setPaper('A4');
+        // $pdf->setPaper('A4');
         return $pdf->stream('Daftar_Pegawai.pdf');
     }
 

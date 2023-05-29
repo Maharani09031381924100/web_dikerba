@@ -42,8 +42,12 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <a class="btn btn-primary" href="{{ route('orientasis.create') }}"> Tambah</a>
-                    <a class="btn btn-danger" href="{{ route('cetakorientasi') }}" target="_blank">PDF</a>
+                    <a class="btn btn-primary" href="{{ route('orientasis.create') }}">
+                        <i class="fa fa-plus"></i> Tambah
+                    </a>
+                    <a class="btn btn-danger" href="{{ route('cetakorientasi') }}" target="_blank">
+                        <i class="far fa-fw fa-file"></i> PDF
+                    </a>
                     <button type="button" class="btn btn-success my-2" data-toggle="modal" data-target="#excelModal">
                         <i class="far fa-fw fa-file"></i> EXCEL
                     </button>

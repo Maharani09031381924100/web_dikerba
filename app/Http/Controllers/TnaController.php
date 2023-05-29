@@ -223,7 +223,7 @@ class TnaController extends Controller
         view()->share('tnaUtama', $tnaUtama);
         view()->share('tna', $tna);
         $pdf = PDF::loadView('tnas.tna-pdf');
-        $pdf->setPaper('A4','landscape');
+        // $pdf->setPaper('A4','landscape');
         return $pdf->stream('Daftar_TNA.pdf');
     }
 

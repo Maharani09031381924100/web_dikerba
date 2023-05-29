@@ -347,7 +347,7 @@ class IhtController extends Controller
         view()->share('end', $end);
         view()->share('iht', $iht);
         $pdf = PDF::loadView('ihts.pelatihan-pdf');
-        $pdf->setPaper('A4');
+        // $pdf->setPaper('A4');
         return $pdf->stream('Daftar_Pelatihan.pdf');
     }
 
@@ -357,7 +357,7 @@ class IhtController extends Controller
         view()->share('iht', $iht);
         view()->share('detailIht', $detailIht);
         $pdf = PDF::loadView('ihts.detail-pdf');
-        $pdf->setPaper('A4');
+        // $pdf->setPaper('potrait');
         return $pdf->stream('Daftar_Kegiatan.pdf');
     }
 
@@ -371,7 +371,7 @@ class IhtController extends Controller
         view()->share('pesertaIht', $pesertaIht);
         view()->share('narasumberIht', $narasumberIht);
         $pdf = PDF::loadView('ihts.peserta-pdf');
-        $pdf->setPaper('A4');
+        // $pdf->setPaper('A4');
         return $pdf->stream('Daftar_Peserta.pdf');
     }
 

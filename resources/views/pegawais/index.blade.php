@@ -13,7 +13,7 @@
                 <div class="card-body">
 
                     <a href="{{route('pegawais.create')}}" class="btn btn-primary my-2">
-                        <i class="fa fa-plus"></i> Tambah Pegawai
+                        <i class="fa fa-plus"></i> Tambah
                     </a>
                     <a href="/cetakPegawai" class="btn btn-danger my-2">
                         <i class="far fa-fw fa-file"></i> PDF

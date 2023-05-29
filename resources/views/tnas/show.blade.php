@@ -12,7 +12,7 @@
         <div class="card">
             <div class="card-body">
                 <a href="{{route('tnas.createTna', $tnaUtama['id'])}}" class="btn btn-primary my-2">
-                    <i class="fa fa-plus"></i> Tambah Data TNA
+                    <i class="fa fa-plus"></i> Tambah
                 </a>
                 <a href="/cetakTna/{{$tnaUtama['id']}}" class="btn btn-danger my-2">
                     <i class="far fa-fw fa-file"></i> PDF
@@ -38,7 +38,6 @@
                             <th width="200px">Masalah yang dihadapi untuk pengembangan capaian kompetensi (diisi berdasarkan poin sebelumnya)</th>
                             <th width="200px">Pelatihan/IHT/seminar/workshop/teknis yang telah diikuti dalam 2 tahun terakhir (online/offline)</th>
                             <th width="200px">Pelatihan/IHT/Prioritas untuk Pengembangan Kompetensi sesuai Tupoksi</th>
-                            <th>Pendidikan</th>
                             @if(auth()->user()->role=='admin')
                             <th>Dibuat</th>
                             <th>Diperbaharui</th>

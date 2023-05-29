@@ -12,7 +12,7 @@
         <div class="card">
             <div class="card-body">
                 <a href="{{route('tnas.createUtama')}}" class="btn btn-primary mb-2" style="float: left;">
-                    <i class="fa fa-plus"></i> Tambah Tahun Data TNA
+                    <i class="fa fa-plus"></i> Tambah
                 </a>
                 <br>
                 <br>

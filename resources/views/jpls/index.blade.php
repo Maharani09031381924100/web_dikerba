@@ -15,7 +15,7 @@
         <div class="card">
             <div class="card-body">
                 <a href="{{route('jpls.createUtama')}}" class="btn btn-primary mb-2">
-                    <i class="fa fa-plus"></i> Tambah Data JPL
+                    <i class="fa fa-plus"></i> Tambah
                 </a>
                 <br><br>
                 <table class="table table-hover table-bordered table-stripped" id="jplTable" >

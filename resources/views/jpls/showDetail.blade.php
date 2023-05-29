@@ -14,8 +14,8 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <a href="/jpls/{{$jplUtama['id']}}/create" class="btn btn-success my-2">
-                    <i class="fa fa-plus"></i> Tambah Data JPL
+                <a href="/jpls/{{$jplUtama['id']}}/create" class="btn btn-primary my-2">
+                    <i class="fa fa-plus"></i> Tambah
                 </a>
                 <a href="/cetakJpl/{{$jplUtama['id']}}" class="btn btn-danger my-2">
                     <i class="far fa-fw fa-file"></i> PDF

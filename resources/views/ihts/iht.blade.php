@@ -214,7 +214,7 @@
                 <!-- Button trigger modal -->
                 <div style="margin: 3px 1px">
                     <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#ihtModal">
-                        <i class="fa fa-plus"></i> Tambah Pelatihan
+                        <i class="fa fa-plus"></i> Tambah
                     </button>
                     <button type="button" class="btn btn-danger my-2" data-toggle="modal" data-target="#pdfModal">
                         <i class="far fa-fw fa-file"></i> PDF

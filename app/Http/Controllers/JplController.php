@@ -247,7 +247,7 @@ class JplController extends Controller
         view()->share('jplUtama', $jplUtama);
         view()->share('jpl', $jpl);
         $pdf = PDF::loadView('jpls.jpl-pdf');
-        $pdf->setPaper('A4');
+        // $pdf->setPaper('A4');
         return $pdf->stream('Daftar_JPL.pdf');
     }
 
@@ -259,7 +259,7 @@ class JplController extends Controller
         view()->share('jpl', $jpl);
         view()->share('jpls', $jpls);
         $pdf = PDF::loadView('jpls.detail-pdf');
-        $pdf->setPaper('A4','landscape');
+        // $pdf->setPaper('A4','landscape');
         return $pdf->stream('Daftar_JPL_Detail.pdf');
     }
 

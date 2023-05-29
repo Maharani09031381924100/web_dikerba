@@ -87,7 +87,7 @@ class MahasiswaController extends Controller
                 },
             ]);
         $pdf = PDF::loadview('mahasiswas.downloadmahasiswapdf', compact('mahasiswas', 'mhs'));
-        $pdf->setPaper('A4','landscape');
+        // $pdf->setPaper('A4','landscape');
         return $pdf->stream('laporan-mahasiswa.pdf');
     }
     // public function excelmahasiswa(Request $request)

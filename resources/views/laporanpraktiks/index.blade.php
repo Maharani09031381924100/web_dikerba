@@ -41,12 +41,16 @@
                     <form action="{{ route('cetaklaporanpraktik') }}" method="post">
                         @csrf
 
-                        <a class="btn btn-primary" href="{{ route('laporanpraktiks.create') }}"> Tambah</a>
+                        <a class="btn btn-primary" href="{{ route('laporanpraktiks.create') }}">
+                            <i class="fa fa-plus"></i> Tambah
+                        </a>
                         @foreach ($laporanpraktiks as $laporanpraktik)
                         <input type="text" name="laporanpraktiks[]" value="{{ $laporanpraktik->id }}" hidden>
                         @endforeach
 
-                        <button class="btn btn-danger" type="submit" formtarget="_blank">PDF</button>
+                        <button class="btn btn-danger" type="submit" formtarget="_blank">
+                            <i class="far fa-fw fa-file"></i> PDF
+                        </button>
                         <button type="button" class="btn btn-success my-2" data-toggle="modal" data-target="#excelModal">
                             <i class="far fa-fw fa-file"></i> EXCEL
                         </button>
