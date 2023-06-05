@@ -21,6 +21,8 @@ class Laporanpraktik extends Model
         'tgl_mulai',
         'tgl_selesai',
         'jumlah',
+        'pria',
+        'perempuan',
         'keterangan',
         'Kelulusan',
 

@@ -355,22 +355,22 @@ return [
                     'icon' => 'fas fa-fw fa-home',
                 ],
                 [
-                    'text' => 'Kuisioner Kepuasan Mahasiswa Terhadap Pelaksanaan Praktik',
+                    'text' => 'Kuesioner Kepuasan Mahasiswa Terhadap Pelaksanaan Praktik',
                     'url' => '/uploadkepuasan',
                     'icon' => 'fas fa-fw fa-book',
                 ],
                 [
-                    'text' => 'Kuisioner Kepuasan Pasien',
+                    'text' => 'Kuesioner Kepuasan Pasien',
                     'url' => '/uploadkepuasanpasien',
                     'icon' => 'fas fa-fw fa-book',
                 ],
                 [
-                    'text' => 'Kuisioner Evaluasi Penyelenggaraan Pendidikan',
+                    'text' => 'Kuesioner Evaluasi Penyelenggaraan Pendidikan',
                     'url' => '/uploadevaluasipenyelenggaraan',
                     'icon' => 'fas fa-fw fa-book',
                 ],
                 [
-                    'text' => 'Kuisioner Evaluasi Kinerja Dokter',
+                    'text' => 'Kuesioner Evaluasi Kinerja Dokter',
                     'url' => '/uploadevaluasikinerjadokter',
                     'icon' => 'fas fa-fw fa-book',
                 ],

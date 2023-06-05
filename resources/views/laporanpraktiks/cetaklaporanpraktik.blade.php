@@ -100,6 +100,8 @@
                     <th scope="col">Tanggal Masuk</th>
                     <th scope="col">Tanggal Keluar</th>
                     <th scope="col">Jumlah</th>
+                    <th scope="col">Laki-laki</th>
+                    <th scope="col">Perempuan</th>
                     <th scope="col">Keterangan</th>
                     <th scope="col">Status Kelulusan</th>
                 </tr>
@@ -117,6 +119,8 @@
                     <td>{{ date('d M Y', strtotime($laporanpraktik->tgl_mulai)) }}</td>
                     <td>{{ date('d M Y', strtotime($laporanpraktik->tgl_selesai)) }}</td>
                     <td>{{ $laporanpraktik->jumlah }}</td>
+                    <td>{{ $laporanpraktik->pria }}</td>
+                    <td>{{ $laporanpraktik->perempuan }}</td>
                     <td>{{ $laporanpraktik->keterangan }}</td>
                     <td>{{ $laporanpraktik->Kelulusan }}</td>
                 </tr>
@@ -124,6 +128,8 @@
                 <tr>
                     <td colspan="8">Total</td>
                     <td>{{ $laporanpraktiks->sum('jumlah') }}</td>
+                    <td>{{ $laporanpraktiks->sum('pria') }}</td>
+                    <td>{{ $laporanpraktiks->sum('perempuan') }}</td>
                     <td></td>
                     <td></td>
                 </tr>

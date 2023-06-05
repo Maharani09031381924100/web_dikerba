@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Mahasiswa;
-use App\Models\Ruangan;
 use App\Models\Univ;
 use App\Models\Fakul;
 use App\Models\Jurusan;
@@ -85,6 +83,8 @@ class LaporanpraktikController extends Controller
             'tgl_mulai' => 'required',
             'tgl_selesai' => 'required',
             'jumlah' => 'required',
+            'pria' => 'required',
+            'perempuan' => 'required',
             'keterangan' => 'required',
             'Kelulusan' => 'required',
         ]);
@@ -145,6 +145,8 @@ class LaporanpraktikController extends Controller
             'tgl_mulai' => 'required',
             'tgl_selesai' => 'required',
             'jumlah' => 'required',
+            'pria' => 'required',
+            'perempuan' => 'required',
             'keterangan' => 'required',
             'Kelulusan' => 'required',
         ]);

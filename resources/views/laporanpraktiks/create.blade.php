@@ -104,6 +104,18 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
+                                <strong>Laki-laki</strong>
+                                <input type="integer" name="pria" class="form-control" placeholder="Jumlah Laki-laki Mahasiswa Praktik">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <strong>Perempuan</strong>
+                                <input type="integer" name="perempuan" class="form-control" placeholder="Jumlah perempuan Mahasiswa Praktik">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
                                 <strong>Keterangan</strong>
                                 <input type="text" name="keterangan" class="form-control" placeholder="Keterangan">
                             </div>

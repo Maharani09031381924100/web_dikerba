@@ -5,6 +5,7 @@
 @section('content_header')
     <h1 class="m-0 text-dark">Website Dikerba</h1>
     <h5 style="color:green">Instalasi Diklat dan Litbang Rumah Sakit Ernaldi Bahar</h5>
+    <p>Buku Petunjuk User Guide <a class="btn btn-info btn-xs" href="vendor/adminlte/dist/dokumen/userguide.pdf">Download</a>
 @stop
 
 @section('content')
@@ -36,6 +37,7 @@
                 </div>
             @endif
             </div>
+
         </div>
     </div>
 @stop

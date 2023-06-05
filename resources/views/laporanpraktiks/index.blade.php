@@ -75,6 +75,8 @@
                             <th>Tanggal Mulai</th>
                             <th>Tanggal Selesai</th>
                             <th>Jumlah</th>
+                            <th>Laki-laki</th>
+                            <th>Perempuan</th>
                             <th>Keterangan</th>
                             <th>Kelulusan</th>
                             @if(auth()->user()->role=='admin')
@@ -96,6 +98,8 @@
                                 <td>{{ date('d M Y', strtotime($laporanpraktik->tgl_mulai)) }}</td>
                                 <td>{{ date('d M Y', strtotime($laporanpraktik->tgl_selesai)) }}</td>
                                 <td>{{ $laporanpraktik->jumlah }}</td>
+                                <td>{{ $laporanpraktik->pria }}</td>
+                                <td>{{ $laporanpraktik->perempuan }}</td>
                                 <td>{{ $laporanpraktik->keterangan }}</td>
                                 <td>{{ $laporanpraktik->Kelulusan }}</td>
                                 @if(auth()->user()->role=='admin')

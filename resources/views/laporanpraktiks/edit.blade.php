@@ -100,6 +100,18 @@
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
+                                    <strong>Laki-laki</strong>
+                                    <input type="integer" name="pria" value="{{ $laporanpraktik->pria }}" class="form-control" placeholder="Jumlah Laki-laki Mahasiswa">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <strong>Perempuan</strong>
+                                    <input type="integer" name="perempuan" value="{{ $laporanpraktik->perempuan }}" class="form-control" placeholder="Jumlah Perempuan Mahasiswa">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
                                     <strong>Keterangan</strong>
                                     <input type="text" name="keterangan" value="{{ $laporanpraktik->keterangan }}" class="form-control" placeholder="Keterangan">
                                 </div>
